@@ -144,9 +144,10 @@ public class MockFilter implements Filter {
         doBeforeProcessing(request, response);
         
         Throwable problem = null;
-
+        HttpServletRequest req = (HttpServletRequest)request;
         try {
-            RequestDispatcher rd = filterConfig.getServletContext().getRequestDispatcher( "/MockServlet");
+            //RequestDispatcher rd = filterConfig.getServletContext().getRequestDispatcher(req.getContextPath()+filterConfig.getInitParameter("ResourcePath"));
+            RequestDispatcher rd = filterConfig.getServletContext().getRequestDispatcher(filterConfig.getInitParameter("ResourcePath"));
             rd.forward(request,response);
             //chain.doFilter(request, response);
         } catch(Throwable t) {
