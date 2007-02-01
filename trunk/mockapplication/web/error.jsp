@@ -1,5 +1,7 @@
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
+<%-- Prevent the creation of a session --%>
+<%@page session="false"%>
 <%--
 Copyright (c) 2006 Mark Bundgus
 
