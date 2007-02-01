@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
     <display-name>MockApplication</display-name>
+ 
     <filter>
         <filter-name>MockJPGFilter</filter-name>
         <filter-class>com.bundgus.mockapplication.filter.MockFilter</filter-class>
@@ -105,7 +106,7 @@
             <param-value>/images/menu.png</param-value>
         </init-param>
     </filter>
-        <filter>
+    <filter>
         <filter-name>MockMENULEFTFilter</filter-name>
         <filter-class>com.bundgus.mockapplication.filter.MockFilter</filter-class>
         <init-param>
@@ -121,72 +122,81 @@
             <param-value>/images/menuright.png</param-value>
         </init-param>
     </filter> 
-    
-  
+
     <filter-mapping>
         <filter-name>MockBGPNGFilter</filter-name>
         <url-pattern>/images/bg.png</url-pattern>
-    </filter-mapping>
+     </filter-mapping>
+    
     <filter-mapping>
         <filter-name>MockBG02BLUELEFTFilter</filter-name>
         <url-pattern>/images/bg02-blue-left.png</url-pattern>
     </filter-mapping>
+    
     <filter-mapping>
         <filter-name>MockBG02BLUERIGHTFilter</filter-name>
         <url-pattern>/images/bg02-blue-right.png</url-pattern>
     </filter-mapping>
+    
     <filter-mapping>
         <filter-name>MockBG02LEFTFilter</filter-name>
         <url-pattern>/images/bg02-left.png</url-pattern>
-    <filter-mapping>
-            <filter-name>MockCSSFilter</filter-name>
-            <url-pattern>*.css</url-pattern>
-    </filter-mapping></filter-mapping>
-    <filter-mapping>
-        <filter-name>MockBG02RIGHTFilter</filter-name>
-        <url-pattern>/images/bg02-right.png</url-pattern>
     </filter-mapping>
-    <filter-mapping>
-        <filter-name>MockBG02WHITELEFTFilter</filter-name>
-        <url-pattern>/images/bg02-white-left.png</url-pattern>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>MockBG02WHITERIGHTFilter</filter-name>
-        <url-pattern>/images/bg02-white-right.png</url-pattern>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>MockMENUFilter</filter-name>
-        <url-pattern>/images/menu.png</url-pattern>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>MockMENULEFTFilter</filter-name>
-        <url-pattern>/images/menuleft.png</url-pattern>
-    </filter-mapping>
-     <filter-mapping>
-        <filter-name>MockMENURIGHTFilter</filter-name>
-        <url-pattern>/images/menuright.png</url-pattern>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>MockJPGFilter</filter-name>
-        <url-pattern>*.jpg</url-pattern>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>MockGIFFilter</filter-name>
-        <url-pattern>*.gif</url-pattern>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>MockPNGFilter</filter-name>
-        <url-pattern>*.png</url-pattern>
-    </filter-mapping>
+    
     <filter-mapping>
         <filter-name>MockCSSFilter</filter-name>
         <url-pattern>*.css</url-pattern>
     </filter-mapping>
+    
+    <filter-mapping>
+        <filter-name>MockBG02RIGHTFilter</filter-name>
+        <url-pattern>/images/bg02-right.png</url-pattern>
+    </filter-mapping>
+    
+    <filter-mapping>
+        <filter-name>MockBG02WHITELEFTFilter</filter-name>
+        <url-pattern>/images/bg02-white-left.png</url-pattern>
+    </filter-mapping>
+    
+    <filter-mapping>
+        <filter-name>MockBG02WHITERIGHTFilter</filter-name>
+        <url-pattern>/images/bg02-white-right.png</url-pattern>
+    </filter-mapping>
+    
+    <filter-mapping>
+        <filter-name>MockMENUFilter</filter-name>
+        <url-pattern>/images/menu.png</url-pattern>
+    </filter-mapping>
+    
+    <filter-mapping>
+        <filter-name>MockMENULEFTFilter</filter-name>
+        <url-pattern>/images/menuleft.png</url-pattern>
+    </filter-mapping>
+    
+    <filter-mapping>
+        <filter-name>MockMENURIGHTFilter</filter-name>
+        <url-pattern>/images/menuright.png</url-pattern>
+    </filter-mapping>
+        
+    <filter-mapping>
+        <filter-name>MockJPGFilter</filter-name>
+        <url-pattern>*.jpg</url-pattern>
+    </filter-mapping>
+        
+    <filter-mapping>
+        <filter-name>MockGIFFilter</filter-name>
+        <url-pattern>*.gif</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>MockPNGFilter</filter-name>
+        <url-pattern>*.png</url-pattern>
+    </filter-mapping>
+
     <filter-mapping>
         <filter-name>MockFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-
     
     <session-config>
         <session-timeout>
@@ -206,4 +216,4 @@
         <error-code>404</error-code>
         <location>/error.jsp</location>
     </error-page>
-    </web-app>
+</web-app>
